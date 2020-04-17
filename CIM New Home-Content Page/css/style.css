@@ -14,6 +14,8 @@ body { font-family: 'Montserrat' , sans-serif;}
 	Base
 \* ------------------------------------------------------------ */
 
+.btn-light-blue,
+.intro-academy .intro-features li a,
 .link:after,
 .btn-blue {
 	-webkit-transition: all .5s; 
@@ -27,6 +29,11 @@ body { font-family: 'Montserrat' , sans-serif;}
 .header { position: fixed; top: 0; left: 0; z-index: 10;  width: 100%;  background-color: #fff; padding: 15px 0; }
 .header .logo { display: inline-block; width: 250px; }
 .header .logo img { width: 100%;  }
+
+.header-secondary {
+	-webkit-box-shadow: 0 4px 3px #ddd; 
+        	box-shadow: 0 4px 3px #ddd; 
+}
 
 /* ------------------------------------------------------------ *\
 	Nav
@@ -76,8 +83,13 @@ body { font-family: 'Montserrat' , sans-serif;}
 	Buttons
 \* ------------------------------------------------------------ */
 
+.btn { display: inline-block; }
+
 .btn-blue { background-color: #157c8d; color: #fff;  border-radius: 3px; font-weight: 700; line-height: 1; padding: 11px 12px; }
 .btn-blue:hover  { background-color: #000;  }
+
+.btn-light-blue { background-color: #a4e9cd; color: #000;  border-radius: 3px; font-weight: 700; line-height: 1; padding: 17px 40px;}
+.btn-light-blue:hover  { background-color: #fff;  }
 
 /* ------------------------------------------------------------ *\
 	Intro
@@ -91,7 +103,10 @@ body { font-family: 'Montserrat' , sans-serif;}
 .intro-academy .intro-features li { display: inline-block; vertical-align: top; font-size: 24px; text-align: center;  }
 .intro-academy .intro-features li .intro-icons { color: #a4e9cd;  font-size: 40px;  margin-bottom: 20px;  }
 .intro-academy .intro-features li span  { display: block; }
+.intro-academy .intro-features li a  {color: #cedae6; text-decoration: none;  }
+.intro-academy .intro-features li a:hover  { color: #fff;  }
 .intro-academy .intro-features li:nth-child(2)  { margin: 0 100px;  }
+.intro-academy .intro-actions  { text-align: center; padding-top: 50px;  }
 
 
 
@@ -216,6 +231,56 @@ body { font-family: 'Montserrat' , sans-serif;}
 .footer .footer-content { width: 37%; float: left;  }
 .footer .footer-aside  { width: 45%; float: right;  }
 .footer .footer-aside-inner  { float: right;  }
+
+
+/* ------------------------------------------------------------ *\
+	Animation
+\* ------------------------------------------------------------ */
+
+/*  js-animation  */
+
+.js-animation { opacity: 0; visibility: hidden; 
+    -webkit-transition: all .9s; 
+         -o-transition: all .9s; 
+            transition: all .9s; 
+}
+
+.js-animation.animate { opacity: 1; visibility: visible; }
+
+.js-animation-delay-1x { 
+    -webkit-transition-delay: .4s; 
+         -o-transition-delay: .4s; 
+            transition-delay: .4s; 
+}
+
+.js-animation-delay-2x {
+    -webkit-transition-delay: 1s; 
+         -o-transition-delay: 1s; 
+            transition-delay: 1s;    
+}
+
+.js-animation-delay-3x {
+    -webkit-transition-delay: 1.3s; 
+         -o-transition-delay: 1.3s; 
+            transition-delay: 1.3s;    
+}
+
+.js-animation-from-bottom { 
+    -webkit-transform: translateY(100px); 
+        -ms-transform: translateY(100px); 
+         -o-transform: translateY(100px); 
+            transform: translateY(100px); 
+}
+ 
+
+
+.js-animation-from-bottom.animate { 
+    -webkit-transform: translateY(0); 
+        -ms-transform: translateY(0); 
+         -o-transform: translateY(0); 
+            transform: translateY(0);   
+}
+
 
 
 /* ------------------------------------------------------------ *\
